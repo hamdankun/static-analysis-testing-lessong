@@ -8,4 +8,5 @@ if (!('serviceWorker' in navigator)) {
 
 const greeting = 'hello';
 console.log(`${greeting} world!`);
-const a = [1, 2, 3, 4];
+const ba = [1, 2, 3, 4];
+console.log(ba);
