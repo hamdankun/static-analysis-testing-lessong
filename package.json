@@ -7,7 +7,10 @@
         "build": "babel src --out-dir dist",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint --ignore-path .gitignore .",
-        "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\""
+        "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
+        "format": "yarn prettier -- --write",
+        "format-check": "yarn prettier -- --list-different",
+        "validate-code": "yarn format-check && yarn lint && yarn build"
     },
     "repository": {
         "type": "git",
@@ -30,6 +33,7 @@
         "@babel/core": "^7.12.0",
         "@babel/preset-env": "^7.12.0",
         "eslint": "^7.11.0",
+        "eslint-config-prettier": "^6.12.0",
         "prettier": "^2.1.2"
     }
 }
