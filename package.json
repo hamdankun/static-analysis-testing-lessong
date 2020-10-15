@@ -1,33 +1,35 @@
 {
-  "name": "static-analysis-testing",
-  "version": "1.0.0",
-  "description": "static analysis testing lesson",
-  "main": "index.js",
-  "scripts": {
-    "build": "babel src --out-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ignore-path .gitignore ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hamdankun/static-analysis-testing-lessong.git"
-  },
-  "keywords": [
-    "javascript",
-    "testing",
-    "eslin",
-    "typescript"
-  ],
-  "author": "hamdan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hamdankun/static-analysis-testing-lessong/issues"
-  },
-  "homepage": "https://github.com/hamdankun/static-analysis-testing-lessong#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.12.0",
-    "@babel/core": "^7.12.0",
-    "@babel/preset-env": "^7.12.0",
-    "eslint": "^7.11.0"
-  }
+    "name": "static-analysis-testing",
+    "version": "1.0.0",
+    "description": "static analysis testing lesson",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel src --out-dir dist",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint --ignore-path .gitignore .",
+        "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hamdankun/static-analysis-testing-lessong.git"
+    },
+    "keywords": [
+        "javascript",
+        "testing",
+        "eslin",
+        "typescript"
+    ],
+    "author": "hamdan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hamdankun/static-analysis-testing-lessong/issues"
+    },
+    "homepage": "https://github.com/hamdankun/static-analysis-testing-lessong#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.12.0",
+        "@babel/core": "^7.12.0",
+        "@babel/preset-env": "^7.12.0",
+        "eslint": "^7.11.0",
+        "prettier": "^2.1.2"
+    }
 }

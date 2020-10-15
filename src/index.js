@@ -1,10 +1,11 @@
-const a = () => console.log('hello world')
+const a = () => console.log('hello world');
 
-typeof a === 'string'
+typeof a === 'string';
 
 if (!('serviceWorker' in navigator)) {
-     // no browser support
+    // no browser support
 }
 
 const greeting = 'hello';
 console.log(`${greeting} world!`);
+const a = [1, 2, 3, 4];
